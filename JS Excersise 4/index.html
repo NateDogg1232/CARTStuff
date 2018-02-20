@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A cool webpage</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="">
+    <header>
+        <h1>JS Excersise 4</h1>
+    </header>
+    <form action="" onsubmit="return false;">
+        <div>
+            <button onclick="poundTriangle();">Pound Triangle</button>
+            <button onclick="art3mis();">Art3mis and Parzival</button>
+            <button onclick="stringPyramid(document.getElementById('x').value);">String triangle</button>
+        </div>
+        <div class="chessboardinput">
+            <label for="x">X/Base</label>
+            <input type="number" id="x">
+            <label for="y">Y</label>
+            <input type="number" id="y">
+        </div>
+        <button onclick="chessBoard(document.getElementById('x').value, document.getElementById('y').value);">Chess Board</button>
+    </form>
+
+    <h2 class="outhead">Output:</h2>
+    <div class="outwrap">
+        <p id="output">
+            Please enter a function to run
+        </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
